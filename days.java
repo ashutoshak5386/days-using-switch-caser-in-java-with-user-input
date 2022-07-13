@@ -3,9 +3,10 @@ import java.util.Scanner;
 public class days {
     public static void main(String[]args){
 
-        Scanner myObj = new Scanner(System.in);  // Create a Scanner object
+        Scanner abc = new Scanner(System.in);  // Create a Scanner object
+        System.out.println("enter your number: ");
         
-        int day = myObj.nextInt();
+        int day = abc.nextInt();
         
         switch (day){
 
@@ -16,7 +17,7 @@ public class days {
         case 2:
             System.out.println("tuesday");
             break;
-        
+         
         case 3:
             System.out.println("wednesday");
             break;
@@ -36,6 +37,9 @@ public class days {
             case 7:
             System.out.println("sunday");
             break;
+
+        default:
+            System.out.println("you did not match any of the cases");
         }
 
        
